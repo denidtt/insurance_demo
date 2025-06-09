@@ -14,6 +14,17 @@ When executed , the Schedule runs at 8 AM Everyday and reads from an S3 bucket w
 The code to load your local files into s3 is also added as part of source code under the folder "lib"
 AWS SecretManager has been used to store the secrets like db user, password for now . All other configurations like s3 bucket name , db_url can also be moved and ideally should be kept in SM .
 
+**DashBoards using PLOTLY :**
+Dashbaords have been created using PLOTLY .
+
+1. PYPLOT_DASH.PY is the driver of all static dashbaords . The Dashbaords can be found under the folder "dashboard"
+	
+   1. Premium Received : **premium_received_by_month_by_invoice_status** --> general  categorization of premium received by month on the invoice to check the                                                                              statistics .
+                       : **premium_received_by_month** --> Finds and highloghts any anomalies in the pattern of premiums paid when the total premium received 							   is unusually high or low compared to the average
+   2. NUmber of policies Issued : **policy_issued_by_gender_product** -> clearly points out the disparity in policies that are being sold to only a 										particular section of people with only one product being favoured curently .
+   3. Loss Ratio : **loss_ratio_by_product_per_year** --> finds the loss ration per year per product which can be used for accurate measures on what has gone 							wrong and where is the loss coming from .
+2. Interactive_Dashboard.PY :  creates an interactive dashbaord for visualization . this isn't fully functional at this moment , but it can be hosted using github pages and can be made available with a bit of cofiguration and web hosting .
+    
 
 
 Cloud-Based-Architecture
