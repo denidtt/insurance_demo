@@ -6,7 +6,7 @@
 -- the returning polcies logic is first policy vs all other policies , 
 -- In case that assumption is in-correct just changing the rank condition will render the correct answer 
 -- filtered for only paid premiums 
-
+use staging ;
 
 WITH sum_per_policy AS (
     SELECT policy_number, SUM(total_amount) AS total_amount
@@ -39,4 +39,4 @@ SELECT
     B.returningpolicies
 FROM ranked_policies A
 LEFT JOIN returning_policies B ON A.user_id = B.user_id
-WHERE A.RN = 1 and   A.user_id='28b52674-9558-4938-bdf1-5927e41e3760';
+WHERE A.RN = 1 ;
