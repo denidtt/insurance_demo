@@ -82,7 +82,7 @@ We'll need to modify your script to be event-driven. Like Remove "schedule" and 
  
 		---Rest of the code here ---
 		
-	  return {"statusCode": 500, "body": json.dumps(f"Error during job execution: {e}")}
+	  return {"statusCode": 200, "body": json.dumps("Job Execution Successful !")}
 	
 2. Create a Lambda Function
 Go to the Lambda console and click "Create function".
