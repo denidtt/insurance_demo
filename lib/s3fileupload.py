@@ -27,11 +27,11 @@ def upload_folder_to_s3(folder_path, bucket_name, s3_folder=""):
                 print(f"Failed to upload {local_file_path}: {e}")
 
 # substitute the values as required
-folder_path = "C:/Users/218138/data-take-home-attachments"
-bucket_name = "dcp-s3-test-bucket-tf-dev"
+folder_path = "local-file-location-here"
+bucket_name = "bucket-name-here"
 s3_folder = f"{date.today()}"  # Leave empty if not needed
 
-print(s3_folder)
+
 
 # Method call
-#upload_folder_to_s3(folder_path,bucket_name,s3_folder)
+upload_folder_to_s3(folder_path,bucket_name,s3_folder)
