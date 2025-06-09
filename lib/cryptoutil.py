@@ -6,7 +6,7 @@ import os
 import base64
 import secretsutil
 
-AWS_SECRET_NAME = 'secret-gtf-omne-apse1-dev-test-dataETL'
+AWS_SECRET_NAME = 'example-secret-here'
 
 secrets = secretsutil.get_secret(AWS_SECRET_NAME)
 data = json.loads(secrets)
