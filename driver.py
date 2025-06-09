@@ -8,17 +8,17 @@ from Assignment.lib import dbutils, secretsutil
 
 
 def run_job():
-    AWS_SECRET_NAME = "secret-gtf-mmt-apse1-dev-user-db-secret-01-cicdbmgr"
-    secrets = secretsutil.get_secret(AWS_SECRET_NAME, region_name="ap-southeast-1")
+    AWS_SECRET_NAME = "secret-example-here"
+    secrets = secretsutil.get_secret(AWS_SECRET_NAME, region_name="aws-region-here")
 
     data = json.loads(secrets)
     db_username = data['username']
     db_password = data['password']
-    db_host = "aurora-mysql-gtf-mmt-apse1-dev-insurance-01-cluster.cluster-cd3khmkgi258.ap-southeast-1.rds.amazonaws.com"
+    db_host = "eample-amazonrds-here"
     db_staging = "staging"
     db_modeled = "modeled"
     ddl_path = "sqlscripts/DataModel.sql"
-    bucket_name = "dcp-s3-test-bucket-tf-dev"
+    bucket_name = "bucket-exampl-here"
 
     process_date = "2025-06-04"  # or use: f"{datetime.date.today()}"
 
