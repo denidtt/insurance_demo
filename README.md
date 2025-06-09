@@ -14,7 +14,8 @@ When executed , the Schedule runs at 8 AM Everyday and reads from an S3 bucket w
 The code to load your local files into s3 is also added as part of source code under the folder "lib"
 AWS SecretManager has been used to store the secrets like db user, password for now . All other configurations like s3 bucket name , db_url can also be moved and ideally should be kept in SM .
 
-NOTE : All results are attched in the "result_set" folder.
+NOTE : All results are attched in the "result_set" folder. 
+       The ERD for the DataModeling can be found under "arch_deck"
 
 **DashBoards using PLOTLY :**
 Dashbaords have been created using PLOTLY .
