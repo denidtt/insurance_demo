@@ -37,7 +37,7 @@ def run_job():
 
 
 # Schedule to run daily at 08:00 AM
-schedule.every().day.at("20:15").do(run_job)
+schedule.every().day.at("08:00").do(run_job)
 
 print("Scheduler started. Waiting for next run...")
 
