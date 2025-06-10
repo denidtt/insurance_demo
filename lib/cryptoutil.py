@@ -1,3 +1,8 @@
+""" 
+Non - Functional Code 
+
+
+
 import json
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives import padding
@@ -36,3 +41,5 @@ def encrypt_string(input_string,key,iv):
 
 
 print(encrypt_string("deni",en_key,en_iv))
+
+"""
